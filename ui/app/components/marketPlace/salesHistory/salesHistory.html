@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<title>sales History</title>
+
+<body>
+    <form name="sales History">
+        <div class="container-fluid" style="padding-right:0px;padding-left:0px">
+            <div class=" col-sm-12">
+                    <div class="form-group col-sm-12 col-xs-12">
+                            <div class="col-sm-2">
+                                <div class=" input-group">
+                                    <input type="text"class="form-control f12" ng-model="values.searchTextOnBoarding" placeholder="Search Marketplace">
+                                    <span class="input-group-addon " style="color:transparent">.<a class="fa fa-search" style="color:black"></a></span>   
+                                </div>
+                            </div>
+                            <div class="form-group f14  col-sm-2">
+                                <a>Advanced search</a>
+                            </div> 
+                            <div class="form-group f14 text-right col-sm-offset-4 col-sm-2">
+                                <a id="sellsList" href="{{hostname}}#/salesOpportunities_Listings">Selling Opportunities </a>
+                            </div> 
+                            <div class="form-group f14 text-right col-sm-1">
+                                <a id="activeOffer" href="{{hostname}}#/activeSellOffers">Active Offers</a>
+                            </div> 	
+                            <div class="form-group f14 text-right col-sm-1">
+                                <a id="salesHistory" href="{{hostname}}#/salesHistory">Sales History</a>
+                            </div>		
+                        </div>
+            </div>
+            <div class=" col-sm-12 ">
+                <div class=" form-group col-sm-2">
+                    <div class=" form-group col-sm-12 border_pack4" style="height:620px">
+                        <div class="col-sm-2 col-xs-1 fa fa-filter" style="font-size:15px"></div>
+                        <div class="col-sm-4 col-xs-2 no-padding">
+                            <p>
+                                <strong>Filters</strong>
+                            </p>
+                        </div>
+                        <div class="col-sm-5 col-xs-4">
+                            <a>Clear all</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12 top-purchase-margin">
+                            <div class="col-sm-2 col-sm-offset-3 mb-view ">
+                                <div class="col-sm-12 text-center">
+                                    <a id="mySales" class="noneDecor" href="{{hostname}}#/salesHistory">
+                                        <div class="fa fa-user user-icon-color img-btm-mrg user-image-size"></div>
+                                        <p class="p-lft-fsize">
+                                            <b>My sales</b>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 mb-view ">
+                                <div class="col-sm-12 text-center">
+                                    <a id="publicTrans" class="noneDecor"  href="{{hostname}}#/viewPublicTransaction">
+                                        <div class="fa fa-users user-icon-color img-btm-mrg user-image-size"></div>
+                                        <p class="p-lft-fsize">
+                                            <b> Public Transactions</b>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 bottom-padding-trans">
+                            <div class="col-xs-3 col-sm-1 no-margin-padding">
+                                <p class="no-margin-padding word-top-right-pad ">2 sales</p>
+                            </div>
+                            <div class="col-xs-9 col-sm-3 no-margin-padding">
+                                <div class="fa fa-sort top-pad-seltype col-xs-2 col-sm-1" style="font-size:20px"></div>
+                                <div class="col-sm-6 col-xs-8">
+                                    <select class="form-control" name="sort">
+                                        <option value="sort">Sort By</option>
+                                        <option value="date">Date</option>
+                                        <option value="Name">Name</option>
+                                        <option value="product">Products</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12  no-padding list-bottom-marg border_trans_list ">
+                            <div class="Panel_011_sales_History col-sm-12 panel panel-default ">
+                                <div class=" panel-heading">
+                                    <div class="col-sm-3 ">
+                                        <p>Transaction ID:123</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p>Date:March 28th,2018</p>
+                                    </div>
+                                    <div>
+                                        <p>Status:Pending shipment</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-sm-6 ">
+                                        <p>You sold one product from
+                                            <a>Spring brass sales</a> to
+                                            <a>Manahil Malik</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-3">
+                                        <a type="button" id="salesHistoryID123AddTraceability" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/addTrackingInformation">Add tracking information</a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <br>
+                                        <a type="button" id="salesHistoryID123ViewDetails" class="tot_btns_sales_History btn btn-default" href="{{hostname}}#/salesViewDetails">View details</a>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-6">
+                                        <br>
+                                        <a type="button" id="salesHistoryID123CreateShippingLabel" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/createShippingLabel">Create shipping label</a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <br>
+                                        <a type="button" id="salesHistoryID123RateTransaction" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/salesRateTransaction">Rate transaction</a>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-6">
+                                        <br>
+                                        <a type="button" id="salesHistoryID123AddTraceability" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/viewPublicTransaction">Add traceability</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Panel_011_sales_History  col-sm-12 panel panel-default">
+                                <div class=" panel-heading">
+                                    <div class="col-sm-3 ">
+                                        <p>Transaction ID:234</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p>Date:March 17th,2018</p>
+                                    </div>
+                                    <div>
+                                        <p>Status:Delivered</p>
+                                    </div>
+                                </div>
+                                <div class=" panel-body">
+                                    <div class="col-sm-6 ">
+                                        <p>You sold 6 product from
+                                            <a>listing 441</a> to
+                                            <a>Cabelas</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-3">
+                                        <a type="button" id="salesHistoryID234AddTraceability" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/addTrackingInformation">View tracking information</a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <br>
+                                        <a type="button" id="salesHistoryID234ViewDetails" class="tot_btns_sales_History btn btn-default" href="{{hostname}}#/salesViewDetails">View details</a>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-6">
+                                        <br>
+                                        <a type="button" id="salesHistoryID234CreateShippingLabel" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/createShippingLabel">View shipping label</a>
+                                    </div>
+                                    <div class="col-sm-3  text-center">
+                                        <br>
+                                        <div class="st_1_sales_History fa fa-star checked2_sales_History"></div>
+                                        <div class="st_1_sales_History fa fa-star checked2_sales_History"></div>
+                                        <div class="st_1_sales_History fa fa-star checked2_sales_History"></div>
+                                        <div class="st_1_sales_History fa fa-star checked2_sales_History"></div>
+                                        <div class="st_1_sales_History fa fa-star"></div>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-6">
+                                        <br>
+                                        <a type="button" id="salesHistoryID234AddTraceability" class="tot_btns_sales_History btn btn-info" href="{{hostname}}#/viewPublicTransaction">View traceability</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div id="input"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+</body>

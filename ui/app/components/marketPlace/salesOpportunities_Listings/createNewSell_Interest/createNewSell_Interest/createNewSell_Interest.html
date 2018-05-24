@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<title>Create New Sell Interest</title>
+<body> 
+<form name="createNewSellInterest" ng-submit="submit()">
+	<div class="container-fluid pad-right-left-buy">
+		<div class="form-group col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2">
+		    <div class="form-group col-sm-11 col-xs-11">
+				<div class="col-sm-11 col-sm-offset-1 col-xs-10"> <h4 class="nomartop"><a>Matches > New alert</a></div>
+			</div>
+			<div class="form-group col-sm-11 col-xs-11">
+				<div class="col-sm-11 col-sm-offset-1 col-xs-10"> <h4 class="nomartop">Marketplace alerts are collections of information used to match you with opportunities in the marketplace. Fill out your purchasing preferences below to get started!</h4></div>
+			</div>
+			<div id="dynamicInput"> </div> 
+			<div class="col-sm-4 col-sm-offset-8 col-xs-12 f18" style="padding-left:50px;">
+                <a id="createNewSellInterestCreateNew"><span class="fa fa-plus-circle f18"></span><strong ng-click="addform()" class="f16">Create new</strong></a>
+            </div>
+			 <div class="form-group col-sm-11 col-xs-11 col">
+			    <div class="col-sm-11 col-xs-11">
+					<div class="col-sm-1 text-right">
+						<label class="f18 contol-label"><strong>1</strong></label>
+					</div>
+					<div class=" col-sm-11 col-xs-11 col-xs-offset-1 col-sm-offset-0 ">
+						<div class="col-sm-3">
+							<label class="f18"><b>Alert name</b></label>
+						</div>
+						<div class="col-sm-4">
+							<input type="text" name="alertName" ng-model="values.alertName" class="form-control input-md" ng-minlength="4" ng-maxlength="20" required >
+							<span class="err_style" ng-show="createNewSellInterest.alertName.$error.required && createNewSellInterest.alertName.$dirty">Enter Alert Name.</span>
+							<span class="err_style" ng-show="createNewSellInterest.alertName.$error.minlength">Alert Name is to short.</span>
+							<span class="err_style" ng-show="createNewSellInterest.alertName.$error.maxlength">Alert Name is to long.</span> 
+						</div>
+					</div>
+                </div>
+			</div>
+			<div class="form-group col-sm-11 col-xs-11  col-sm-offset-0 ">
+                <div class="col-sm-11 col-xs-11">
+					<div class="col-sm-1 text-right">
+						<label class="f18 contol-label"><strong>2</strong></label>
+					</div>
+					<div class="col-sm-11 col-xs-11 col-xs-offset-1 col-sm-offset-0 ">
+						<div class="col-sm-12">
+							<label class="f18"><b>I'm interested in</b></label>
+						</div>
+					</div>
+				</div>   
+            </div>
+			<div class="col-sm-11 col-xs-11 col-xs-offset-1 col-sm-offset-1 ">
+                <div class=" col-sm-6">
+					<div class="btn-group " data-toggle="buttons">
+						<label class="btn btn-default active "id="buy"  ng-click="transactionType('buy')">
+							<input type="radio"  autocomplete="off " checked ng-model = "values.userinterestsbuying" name="FreeForm "  value = "Yes" >Buying
+						</label>
+						<label class="btn btn-default"  id="sell" ng-click="transactionType('sell')">
+							<input type="radio"  autocomplete="off " ng-model = "values.userinterestsselling" name="FreeForm "  value = "No" >Selling
+						</label>
+					</div>
+				</div>
+            </div>
+			<div class="form-group col-sm-11 col-xs-11 " style="margin-bottom:0px; margin-top:10px;">
+			  <div class="col-sm-11 col-xs-11">
+					<div class="col-sm-1 text-right">
+						<label class="f18 contol-label"><strong>3</strong></label>
+					</div>
+					<div class=" col-sm-11 col-xs-11 col-xs-offset-1 col-sm-offset-0 " >
+						<div class="col-sm-12 ">
+							<label class="f18"><b>Purchasing Preferences</b></label>  
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="form-group col-xs-12 col-sm-12 ">
+                <div class="form-group col-xs-12 col-sm-10 border_pack col-sm-offset-1" style="margin-top:0px">
+                    <div class=" col-xs-12 col-sm-12 f14">
+                        <div class="form-group col-xs-12 col-sm-12">
+                            <label class="f16"><b>Components</b></label>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input   id="createNewSellInterestPurchasingPreferencesComponentsSelectAll" ng-change="selectAll_type('PurCompType')" ng-model="values.createNewSellInterestPurchasingPreferencesComponentsSelectAll" class="checkboxsize" type="checkbox" value="ComponentsSelectedall">
+                                <label >Select all </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesComponentsCase" ng-model="values.createNewSellInterestPurchasingPreferencesComponentsCase" class="ComponentsSelect checkboxsize" type="checkbox"  ng-checked="values.createNewSellInterestPurchasingPreferencesComponentsSelectAll" >
+                                <label >Case  </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesComponentsProjectile" ng-model="values.createNewSellInterestPurchasingPreferencesComponentsProjectile"    class="ComponentsSelect checkboxsize" type="checkbox" value="Projectile"   ng-checked="values.createNewSellInterestPurchasingPreferencesComponentsSelectAll">
+                                <label >Projectile  </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesComponentsGunpowder" ng-model="values.createNewSellInterestPurchasingPreferencesComponentsGunpowder"  class="ComponentsSelect checkboxsize"  type="checkbox"  value="Gunpowder"   ng-checked="values.createNewSellInterestPurchasingPreferencesComponentsSelectAll">
+                                <label >Gunpowder </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesComponentsGunpowderPrimer" ng-model="values.createNewSellInterestPurchasingPreferencesComponentsPrimer" class="ComponentsSelect checkboxsize" type="checkbox" value="Primer"   ng-checked="values.createNewSellInterestPurchasingPreferencesComponentsSelectAll">
+                                <label >Primer </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12">
+                            <label class="f16"><b>Ammo types</b></label>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesAmmoTypeSelectAll" ng-change="selectAll_type('PurAmmoType')" ng-model="values.createNewSellInterestPurchasingPreferencesAmmoTypeSelectAll" class="checkboxsize"type="checkbox" value=""/>
+                                <label >Select all </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesAmmoTypeHandgun" ng-model="values.createNewSellInterestPurchasingPreferencesAmmoTypeHandgun"  class="AmmoTypesSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesAmmoTypeSelectAll">
+                                <label >Handgun </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesAmmoTypeShotgun" ng-model="values.createNewSellInterestPurchasingPreferencesAmmoTypeShotgun"  class="AmmoTypesSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesAmmoTypeSelectAll">
+                                <label >Shotgun  </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesAmmoTypeRifle" ng-model="values.createNewSellInterestPurchasingPreferencesAmmoTypeRifle"  class="AmmoTypesSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesAmmoTypeSelectAll">
+                                <label >Rifle </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input   id="createNewSellInterestPurchasingPreferencesAmmoTypeRimfire" ng-model="values.createNewSellInterestPurchasingPreferencesAmmoTypeRimfire" class="AmmoTypesSelect checkboxsize"  type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesAmmoTypeSelectAll">
+                                <label >Rimfire</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12">
+                            <label class="f16"><b>Brand</b></label>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesBrandSelectAll" ng-change="selectAll_type('PurBrand')"   ng-model="values.createNewSellInterestPurchasingPreferencesBrandSelectAll"  class="checkboxsize"  type="checkbox" value=""/>
+                            <label >Select all </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input   id="createNewSellInterestPurchasingPreferencesBrandWinchester" ng-model="values.createNewSellInterestPurchasingPreferencesBrandWinchester" class="BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll" >
+                                <label >Winchester  </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input   id="createNewSellInterestPurchasingPreferencesBrandRemington" ng-model="values.createNewSellInterestPurchasingPreferencesBrandRemington"  class="BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll">
+                                <label >Remington </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesBrandFederal" ng-model="values.createNewSellInterestPurchasingPreferencesBrandFederal"    class="BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll">
+                                <label >Federal </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesBrandFiocchi" ng-model="values.createNewSellInterestPurchasingPreferencesBrandFiocchi"    class=" BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll">
+                                <label >Fiocchi </label>
+                            </div>
+                        </div>
+						<div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input   id="createNewSellInterestPurchasingPreferencesBrandWinchesterTwo" ng-model="values.createNewSellInterestPurchasingPreferencesBrandWinchesterTwo" class="BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll" >
+                                <label >Hornaday  </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input   id="createNewSellInterestPurchasingPreferencesBrandRemingtonTwo" ng-model="values.createNewSellInterestPurchasingPreferencesBrandRemingtonTwo"  class="BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll">
+                                <label >Remington </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesBrandFederalTwo" ng-model="values.createNewSellInterestPurchasingPreferencesBrandFederalTwo"    class="BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll">
+                                <label >Federal </label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesBrandFiocchiTwo" ng-model="values.createNewSellInterestPurchasingPreferencesBrandFiocchiTwo"    class=" BrandSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesBrandSelectAll">
+                                <label >Fiocchi </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12">
+                            <label class="f16"><b>Trade partners</b></label>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesTradePartnersSelectAll" ng-change="selectAll_type('PurTradePart')"   ng-model="values.createNewSellInterestPurchasingPreferencesTradePartnersSelectAll" class="checkboxsize" type="checkbox" value=""/>
+                                <label >Select all </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesTradePartnersUsGovernment" ng-model="values.createNewSellInterestPurchasingPreferencesTradePartnersUsGovernment"  class="TradePartnersSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesTradePartnersSelectAll">
+                                <label >US Government   </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="createNewSellInterestPurchasingPreferencesTradePartnersInternational" ng-model="values.createNewSellInterestPurchasingPreferencesTradePartnersInternational"    class="TradePartnersSelect checkboxsize"type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesTradePartnersSelectAll">
+                                <label >International Government </label>
+                            </div>
+                        </div>
+						 <div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesTradePartnersUsCommercial" ng-model="values.createNewSellInterestPurchasingPreferencesTradePartnersUsCommercial"  class="TradePartnersSelect checkboxsize" type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesTradePartnersSelectAll">
+                                <label >US Commercial   </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="createNewSellInterestPurchasingPreferencesTradePartnersInternationalCommercial" ng-model="values.createNewSellInterestPurchasingPreferencesTradePartnersInternationalCommercial"    class="TradePartnersSelect checkboxsize"type="checkbox" value="" ng-checked="values.createNewSellInterestPurchasingPreferencesTradePartnersSelectAll">
+                                <label >International Commercial </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-12">
+                            <label class="f16"><b>Terms of sale</b></label>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                            <input id="createNewSellInterestPurchasingPreferencesTermsOfSaleSelectAll" ng-model="values.createNewSellInterestPurchasingPreferencesTermsOfSaleSelectAll" ng-change="selectAll_type('PurTimeOfSale')"  class="checkboxsize" type="checkbox" value="" />
+                            <label>Select all </label>
+                        </div>
+                    </div>
+                        <div class="form-group col-xs-12 col-sm-12 f14  ">
+                            <div class="col-sm-3">
+                                <input  id="createNewSellInterestPurchasingPreferencesTermsOfSaleImmediate" ng-model="values.createNewSellInterestPurchasingPreferencesTermsOfSaleImmediate"   class="TermsofSaleSelect checkboxsize" type="checkbox" value=""/>
+                                <label>Immediate</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="createNewSellInterestPurchasingPreferencesTermsOfSaleWithinThirtyDays" ng-model="values.createNewSellInterestPurchasingPreferencesTermsOfSaleWithinThirtyDays"  class="TermsofSaleSelect checkboxsize" type="checkbox" value=""/>
+                                <label >Less than 30 days</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="createNewSellInterestPurchasingPreferencesTermsOfSaleThirtyDaysOrMore" ng-model="values.createNewSellInterestPurchasingPreferencesTermsOfSaleThirtyDaysOrMore"  class="TermsofSaleSelect checkboxsize" type="checkbox" value=""/>
+                                <label>Greater than 30 days</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+			<div class="form-group col-xs-12 col-sm-6 col-sm-offset-2" >
+				<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+					<a class="btn btn-default btn-sm center-block img-wid-buy" id="createNewSellInterestCancel" ng-model="values.createNewSellInterestCancel" href="{{hostname}}#/salesOpportunities_Matches">Cancel </a>
+				</div>
+				<div class="form-group col-xs-6 col-sm-4">
+					<a class="btn btn-info btn-sm center-block img-wid-buy" id="createNewSellInterestCreateAlert" ng-model="values.createNewSellInterestCreateAlert"  data-toggle="modal" data-target="#myModal_alert" ng-disabled="createNewSellInterest.$invalid" >Create Alert</a>
+				</div>
+			</div>	
+			<!-- <div id="dynamicInput"> </div> -->
+			<!-- <div class="form-group col-xs-6 col-sm-4"> -->
+					<!-- <a class="btn btn-info btn-sm center-block img-wid-buy" id="createNewSellInterestNext" ng-model="values.createNewSellInterestNext" ng-click="addform()" >Add Next</a> -->
+			<!-- </div> -->
+		</div>
+    </div>
+    
+
+
+    <div class="modal fade" id="myModal_alert" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                        <h3 class="text-center">
+                                <strong>New sell interest creation successful.</strong>
+                            </h3>
+                    <br/>
+                    <div class="fa fa-check col-sm-12 text-center off_butn_mar_pad" style="font-size:50px;color:rgb(25, 211, 25);text-align:text-center"></div>
+                    <br/>
+                    <h4 class="text-center ">
+                        <strong>Your Alert name: {{values.alertName}}</strong>
+                    </h4>
+
+                </div>
+                <div class="modal-footer">
+                    <div class=" form-group col-xs-12 col-sm-12">
+                        <div class="col-sm-4 col-xs-6">
+                            <a style="text-decoration:none;" data-dismiss="modal" id="term_cancel" class="btn btn-default btn-md center-block" href="{{hostname}}#/accountCreationContact">DECLINE</a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 col-sm-offset-4">
+                            <button style="width:100%" ng-click="navMatch();" ng-disabled="accountCreationWallet.$invalid" id="agreeTerms" class="btn btn-info btn-md center-block"
+                             data-dismiss="modal">AGREE</button>
+                            <!-- <a style = "text-decoration:none;"  class="btn btn-info btn-md center-block" href="{{hostname}}#/accountPage" data-dismiss="modal">AGREE</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</form>
+</body>

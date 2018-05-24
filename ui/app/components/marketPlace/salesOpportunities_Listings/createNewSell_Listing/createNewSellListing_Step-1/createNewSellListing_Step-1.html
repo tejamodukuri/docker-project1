@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<title>Onboarding</title>
+   
+<body>
+<form name="createNewSellListingStepOne"> 
+<div class="container-fluid" style="padding-right:0px;padding-left:0px">
+		<div class="form-group col-sm-12 col-lg-12">
+			<div class="form-group col-sm-12 text-center">
+				<label class="f25"><strong> New Sell Listing</strong></label>
+			</div>
+		</div>
+		<div class="form-group col-sm-8 col-lg-8 col-sm-offset-2">
+			<ol class="progress1 progress1--large">
+				<li class="is-active" data-step="1" ng-click="step_1()">
+					Listing details
+				</li>
+				<li data-step="2" ng-click="step_2()">
+					Product(s) details
+				</li>
+				<li data-step="3" ng-click="step_3()">
+					Terms of sale
+				</li>
+				<li data-step="4" ng-click="step_4()">
+				Confirmation
+				</li>  
+			</ol>
+			<div class="form-group col-sm-6 col-sm-offset-4 pad_top">
+				<div class="col-sm-6">
+					<div class="btn-group " data-toggle="buttons">
+						<label class="btn btn-default active "id="buy"  ng-click="transactionType('buy')">
+							<input type="radio"  autocomplete="off " checked ng-model = "values.userinterestsbuying" name="FreeForm "  value = "Yes" >Buying
+						</label>
+						<label class="btn btn-default"  id="sell" ng-click="transactionType('sell')">
+							<input type="radio"  autocomplete="off " ng-model = "values.userinterestsselling" name="FreeForm "  value = "No" >Selling
+						</label>
+						
+					</div>
+                 </div>
+			</div>
+			<div class="form-group col-sm-12 pad_top">
+				<div class=" f20  col-sm-1 col-sm-offset-1">
+					<label>1</label>
+				</div>
+				<div class="col-sm-3 f22">
+					<label>Publish date</label>
+					<div class=" input-group">
+							<input type="date" id="txtFromDate" ng-model="values.publishDate" ng-change="enddatef()"class="form-control f12" >
+								<span id="publishDateCalendar" class="input-group-addon " style="color:transparent">.<a class="fa fa-calendar" style="color:black"></a></span>  
+						</div>
+				</div> 
+				<div class="col-sm-3 f22">
+					<label>Expiration date</label>
+					<div class=" input-group">
+						<input type="date" id="txtToDate"  ng-model="values.expirationDate" ng-change="enddatef()"class="form-control f12" >
+							<span id="expirationDateCalendar" class="input-group-addon " style="color:transparent">.<a class="fa fa-calendar" style="color:black"></a></span>  
+					</div>
+				</div>
+			</div>
+			<div class="form-group col-sm-12 pad_top2">
+				<div class="col-sm-1 col-sm-offset-2 f16">
+					<label>List as</label>
+				</div>
+				<div class="col-sm-2 form-group">
+				<input type="radio" checked name="retailer" ng-model="values.listAsRetailer" id="listAsRetailer">
+					<label>Retailer</label></label>
+					
+				</div> 
+				<div class="col-sm-2 form-group">
+				<input type="radio" name="retailer" ng-model="values.listManufacturer" id="listManufacturer">
+					<label>Manufacturer</label>
+					
+				</div>
+			</div>
+			<div class="form-group col-sm-12 ">
+				<div class="col-xs-2 f20 col-sm-1 col-sm-offset-1">
+					<label>2</label>
+				</div>
+				<div class=" f22 col-sm-10">
+					<label>Is this a one-time or recurring marketplace request?</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-10 col-sm-offset-2">
+				<div class="col-sm-12 nolrpad form-group">
+					<div class="col-sm-4 np ">
+						<div class="col-sm-12">
+							<input type="checkbox" ng-click="toggle()" id="oneTimeRequest" ng-model="values.oneTimeRequest" ng-true-value="One-time request" name="oneTimeRequest"> One-time request
+						</div>
+						<div class="col-sm-12 form-group nolrpad" ng-show="myVar">
+							<input type="checkbox" id="autoReListIfFulfillment" ng-model="values.autoReListIfFulfillment" name="text"> Auto re-list if fulfillment &nbspis<100% 
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-12">
+							<input type="checkbox" ng-click="toggle1()" id="recurringRequest" ng-model="values.recurringRequest"  name="oneTimeRequest"> Recurring request
+						</div>
+						<div class="col-sm-12 form-group nolrpad " ng-show="myVar1" >
+							  
+							<div class="btn-group " data-toggle="buttons">
+								<label class="btn btn-default active "id="daily"  ng-click="transactionType('daily')">
+									<input type="radio"  autocomplete="off " checked ng-model = "values.userinterestsdaily" name="FreeForm "  value = "Yes" >Daily
+								</label>
+								<label class="btn btn-default"  id="weekly" ng-click="transactionType('weekly')">
+									<input type="radio"  autocomplete="off " ng-model = "values.userinterestsweekly" name="FreeForm "  value = "No" >Weekly
+								</label>
+								<label class="btn btn-default"  id="monthly" ng-click="transactionType('monthly')">
+									<input type="radio"  autocomplete="off " ng-model = "values.userinterestsmonthly" name="FreeForm "  value = "No" >Monthly
+								</label>
+						
+							</div>
+						</div>	  
+					</div>
+				</div>
+			</div>
+				
+			    
+			<div class="form-group col-sm-12">
+				<div class="col-xs-2 f20 col-sm-1 col-sm-offset-1">
+					<label>3</label>
+				</div>
+				<div class="f22 col-sm-10">
+					<label>Select a template or create a new request</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-10 col-sm-offset-2">
+				<div class="col-sm-12 np">
+					<div class="col-sm-3 col-lg-2 np">
+						<p><strong>Template name</strong></p>
+						
+							<select class="form-control" ng-model="values.templateName" required>
+								<option></option>
+								<option>Option1</option>
+								<option>Option2</option>
+							</select>
+						
+					</div>
+				</div>
+				<div class="col-sm-12 np"><br>
+					<div class="col-sm-3 col-lg-2 np">
+						<p><strong>Request name</strong></p>
+						<input type="text" name="request" class="form-control" ng-minlength="3" ng-maxlength="15" id="requestName" ng-model="values.requestName" required>
+						<span class="err_style" ng-show="createNewSellListingStepOne.request.$error.required && createNewSellListingStepOne.request.$dirty">Request name is required.</span>
+						<span class="err_style" ng-if="createNewSellListingStepOne.request.$error.minlength && !intake.description.$error.required">Request name is too short.</span>
+						<span class="err_style" ng-show="createNewSellListingStepOne.request.$error.maxlength">Request name is too long.</span>
+					</div>
+					<div class="col-sm-3">
+						<p style="color:white">Request name</p>
+						<input type="checkbox" id="saveAsTemplate" name="requestName" ng-model="values.saveAsTemplate" required> save as template<br>
+						<span class="err_style" ng-show="createNewSellListingStepOne.requestName.$error.required && createNewSellListingStepOne.requestName.$dirty">Please save as template</span>
+					</div>
+				</div>
+			</div>
+			<div class="form-group  col-sm-12">
+				<div class="form-group col-xs-6 col-sm-2 col-sm-offset-1" >
+					<button type="button" style="width:100%" id="cancel" class="btn btn-default btn-sm center-block">Cancel</button>
+				</div>
+				<div class="form-group col-xs-6 col-sm-2">
+					<button type="button" style="width:100%" id="saveAndClose" ng-click="onSaveClose()" class="btn btn-info btn-sm center-block" ng-disabled="createNewSellListingStepOne.$invalid" >Save & close</button>
+				</div>
+				<div class="form-group col-xs-6 col-sm-2 col-sm-offset-2">
+					<a style="width:100%" ng-click="save()" class="btn btn-info btn-sm center-block" id="next" ng-disabled="createNewSellListingStepOne.$invalid">Next</a>
+				</div>
+			</div>    
+		</div>
+</div>
+</form>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  
+ <!DOCTYPE html>
+<title>Onboarding</title>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#publishDate").datepicker();
+		$('#publishDateCalendar').click(function () {
+			$("#publishDate").focus();
+		});
+	});
+	$(document).ready(function () {
+		$("#expirationDate").datepicker();
+		$('#expirationDateCalendar').click(function () {
+			$("#expirationDate").focus();
+		});
+	});
+</script>
+
+<body>
+	<div class="container-fluid" style="padding-right:0px;padding-left:0px">
+		<div class="form-group col-sm-12 col-lg-12">
+			<div class="form-group col-sm-12 text-center">
+				<label class="f25">
+					<strong> New Sell Listing</strong>
+				</label>
+			</div>
+		</div>
+		<div class="form-group col-sm-8 col-lg-8 col-sm-offset-2">
+			<ol class="progress1 progress1--large">
+				<li class="is-active" data-step="1">
+					Listing details
+				</li>
+				<li data-step="2">
+					Product(s) details
+				</li>
+				<li data-step="3">
+					Terms of sale
+				</li>
+				<li data-step="4">
+					Confirmation
+				</li>
+			</ol>
+			<div class="form-group col-sm-12 ">
+				<div class=" f20  col-sm-1 col-sm-offset-1">
+					<label>1</label>
+				</div>
+				<div class="col-sm-3 f22">
+					<label>Publish date</label>
+					<div class=" input-group">
+						<input type="date" ng-model="values.publishDate" class="form-control f12">
+						<span id="publishDateCalendar" class="input-group-addon " style="color:transparent">.
+							<a class="fa fa-calendar" style="color:black"></a>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-3 f22">
+					<label>Expiration date</label>
+					<div class=" input-group">
+						<input type="date" ng-model="values.expirationDate" ng-change="enddatef()" class="form-control f12">
+						<span id="expirationDateCalendar" class="input-group-addon " style="color:transparent">.
+							<a class="fa fa-calendar" style="color:black"></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="form-group col-sm-12 ">
+				<div class="col-xs-2 f20 col-sm-1 col-sm-offset-1">
+					<label>2</label>
+				</div>
+				<div class=" f22 col-sm-10">
+					<label>Is this a one-time or recurring marketplace request?</label>
+				</div>
+			</div>
+			<div class="form-group col-sm-10 col-sm-offset-2">
+				<div class="col-sm-12 nolrpad form-group">
+					<div class="col-sm-3 np ">
+						<input type="checkbox" id="oneTimeRequest" ng-model="values.oneTimeRequest" name="oneTimeRequest"> One-time request
+					</div>
+					<div class="col-sm-3">
+						<input type="checkbox" id="recurringRequest" ng-model="values.recurringRequest" name="recurringRequest"> Recurring request
+					</div>
+				</div>
+				<div class="col-sm-12 form-group">
+					<div class="col-sm-3 nolrpad">
+						<input type="checkbox" id="autoReListIfFulfillment" ng-model="values.autoReListIfFulfillment" name="text"> Auto re-list if fulfillment &nbspis
+						<100% </div>
+							<div class="col-sm-4 nolrpad ">
+								<div class="btn-group lft_ctr_tbl_marg">
+									<button type="button" id="daily" class="btn btn-default" ng-click="values.daily">Daily</button>
+									<button type="button" id="weekly" class="btn btn-default" ng-click="values.weekly">Weekly</button>
+									<button type="button" id="monthly" class="btn btn-default" ng-click="values.monthly">Monthly</button>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="form-group col-sm-12">
+					<div class="col-xs-2 f20 col-sm-1 col-sm-offset-1">
+						<label>3</label>
+					</div>
+					<div class="f22 col-sm-10">
+						<label>Select a template or create a new request</label>
+					</div>
+				</div>
+				<div class="form-group col-sm-10 col-sm-offset-2">
+					<div class="col-sm-12 np">
+						<div class="col-sm-3 col-lg-2 np">
+							<p>
+								<strong>Template name</strong>
+							</p>
+							<form action="form">
+								<select class="form-control" ng-model="values.templateName">
+									<option></option>
+									<option>Rifle</option>
+									<option>Gun</option>
+								</select>
+
+
+								<select class="form-control" ng-model="values.selectedName" >
+										<option ng-repeat="x in trial">{{x.requestName}}</option>
+								</select>
+							 </form>
+						</div>
+					</div>
+					<div class="col-sm-12 np">
+						<br>
+						<div class="col-sm-3 col-lg-2 np">
+							<p>
+								<strong>Request name</strong>
+							</p>
+							<input type="text" class="form-control" id="requestName" ng-model="values.requestName">
+						</div>
+						<div class="col-sm-3">
+							<p style="color:white">Request name</p>
+							<input type="checkbox" id="saveAsTemplate" ng-model="values.saveAsTemplate" ng-change="saveAsTemplate()"> save as template
+						</div>
+					</div>
+				</div>
+				<div class="form-group  col-sm-12">
+					<div class="form-group col-lg-2 col-sm-2 col-sm-offset-1">
+						<button type="button" style="width:100%" id="cancel" class="btn btn-default btn-sm center-block">Cancel</button>
+					</div>
+					<div class="form-group col-lg-2 col-sm-2">
+						<a input type="button" style="width:100%" class="btn btn-info btn-sm center-block" ng-click="onSaveClose()">Save and close</a>
+					</div>
+					<div class="form-group col-lg-2 col-sm-2 col-sm-offset-5">
+						<a button type="button" style="width:100%" id="next" class="btn btn-info btn-sm center-block" ng-click="onSaveNext()" href="">Next</a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</body> -->

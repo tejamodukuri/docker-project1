@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526542816688' stop='1526542917312'>
+    <name>to test the zerv application</name>
+    <title>to test the zerv application</title>
+    <test-cases>
+        <test-case start='1526542816689' status='passed' stop='1526542837039'>
+            <name>this is intake form Form insertaion</name>
+            <title>this is intake form Form insertaion</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542837039' status='passed' stop='1526542847808'>
+            <name>it should be able to create account</name>
+            <title>it should be able to create account</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542847808' status='passed' stop='1526542857138'>
+            <name>it should be able to login</name>
+            <title>it should be able to login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542857138' status='passed' stop='1526542873020'>
+            <name>it should be able to Do MFA for Email</name>
+            <title>it should be able to Do MFA for Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542873020' status='passed' stop='1526542883410'>
+            <name>it should be able to Do MFA for Text</name>
+            <title>it should be able to Do MFA for Text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542883410' status='passed' stop='1526542894052'>
+            <name>it should be able to Do MFA for Call</name>
+            <title>it should be able to Do MFA for Call</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542894052' status='passed' stop='1526542902140'>
+            <name>it Should View Trading Partners </name>
+            <title>it Should View Trading Partners </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542902140' status='passed' stop='1526542909828'>
+            <name>it Should View Other Persons Profile </name>
+            <title>it Should View Other Persons Profile </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526542909829' status='passed' stop='1526542917309'>
+            <name>it Should View Groups/Favorites </name>
+            <title>it Should View Groups/Favorites </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

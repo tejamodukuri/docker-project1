@@ -1,0 +1,475 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526469764270' stop='1526469774038'>
+    <name>to test the zerv application</name>
+    <title>to test the zerv application</title>
+    <test-cases>
+        <test-case start='1526469764272' status='failed' stop='1526469772386'>
+            <name>this is intake form Form insertaion</name>
+            <title>this is intake form Form insertaion</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="intakeForm"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="intakeForm"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at home_page.intakeForm (/home/raj/newtest/CR-WS3/zervplatform/test/page/home_page.js:9:38)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:12:36)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("this is intake form Form insertaion") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:11:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469772387' status='failed' stop='1526469772548'>
+            <name>it should be able to create account</name>
+            <title>it should be able to create account</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="invitationLink"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="invitationLink"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at home_page.InvitationLink (/home/raj/newtest/CR-WS3/zervplatform/test/page/home_page.js:15:42)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:46:40)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it should be able to create account") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:45:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469772548' status='failed' stop='1526469772999'>
+            <name>it should be able to login</name>
+            <title>it should be able to login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: by.model("values.userName")</message>
+                <stack-trace>NoSuchElementError: No element found using locator: by.model("values.userName")
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as sendKeys] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at Login_page.userName (/home/raj/newtest/CR-WS3/zervplatform/test/page/login_page.js:7:41)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:60:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it should be able to login") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:57:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469772999' status='failed' stop='1526469773328'>
+            <name>it should be able to Do MFA for Email</name>
+            <title>it should be able to Do MFA for Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="mfaRequestNext"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="mfaRequestNext"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at MfaRequest.mfaRequestNext (/home/raj/newtest/CR-WS3/zervplatform/test/page/mfa_request.js:8:37)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:69:38)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it should be able to Do MFA for Email") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:66:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469773328' status='failed' stop='1526469773538'>
+            <name>it should be able to Do MFA for Text</name>
+            <title>it should be able to Do MFA for Text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="mfaRequestNext"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="mfaRequestNext"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at MfaRequest.mfaRequestNext (/home/raj/newtest/CR-WS3/zervplatform/test/page/mfa_request.js:8:37)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:83:42)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it should be able to Do MFA for Text") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:80:4)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469773538' status='failed' stop='1526469773694'>
+            <name>it should be able to Do MFA for Call</name>
+            <title>it should be able to Do MFA for Call</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="mfaRequest"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="mfaRequest"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at home_page.MfaRequest (/home/raj/newtest/CR-WS3/zervplatform/test/page/home_page.js:26:38)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:94:32)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it should be able to Do MFA for Call") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:93:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469773694' status='failed' stop='1526469773791'>
+            <name>it Should View Trading Partners </name>
+            <title>it Should View Trading Partners </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="tradingPartners"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="tradingPartners"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at home_page.tradingPartners (/home/raj/newtest/CR-WS3/zervplatform/test/page/home_page.js:37:43)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:107:41)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it Should View Trading Partners ") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:106:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469773791' status='failed' stop='1526469773913'>
+            <name>it Should View Other Persons Profile </name>
+            <title>it Should View Other Persons Profile </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(partial link text, Other Person)</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(partial link text, Other Person)
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at home_page.otherPersonsProfile (/home/raj/newtest/CR-WS3/zervplatform/test/page/home_page.js:42:53)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:111:45)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it Should View Other Persons Profile ") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:110:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526469773913' status='failed' stop='1526469774035'>
+            <name>it Should View Groups/Favorites </name>
+            <title>it Should View Groups/Favorites </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, *[id="groups\/Favorites"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, *[id="groups\/Favorites"])
+                    at elementArrayFinder.getWebElements.then (/usr/lib/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (/usr/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/usr/lib/node_modules/protractor/built/element.js:831:22)
+                    at home_page.groupsOrFavorites (/home/raj/newtest/CR-WS3/zervplatform/test/page/home_page.js:47:44)
+                    at UserContext.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:115:43)
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                From: Task: Run it("it Should View Groups/Favorites ") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:114:5)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:4:1)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

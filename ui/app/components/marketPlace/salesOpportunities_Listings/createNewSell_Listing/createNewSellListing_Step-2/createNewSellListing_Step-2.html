@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<title>Onboarding</title>
+   <script type="text/javascript">
+  $(document).ready(function() {
+  $("#manufactureDate").datepicker();
+  $('#manufactureDateCalendar').click(function() {
+    $("#manufactureDate").focus();
+  });
+});
+</script>
+<body>
+	<form name="createNewSellListingStepTwo" id="myForm">
+		<div class="container-fluid" style="padding-right:0px;padding-left:0px">
+			<div class="form-group col-sm-12 col-md-12 col-lg-12">
+				<div class="form-group col-sm-12 col-xs-12 text-center">
+				<label class="f25"><strong> New Sell Listing</strong></label>
+				</div>
+			</div>
+			<div class="form-group col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2">
+				<ol class="progress1 progress1--large">
+					<li class="is-complete" data-step="1" ng-click="step_1()">
+						Listing details
+					</li>
+					<li class="is-active" data-step="2" ng-click="step_2()">
+						Product(s) details
+					</li>
+					<li data-step="3" ng-click="step_3()">
+						Terms of sale
+					</li>
+					<li data-step="4" ng-click="step_4()">
+						Confirmation
+					</li>  
+				</ol>
+				<div class="form-group col-sm-12 col-xs-12">
+					<div class="col-xs-2 f20 text-center col-sm-1 col-sm-offset-1">
+						<label>4 </label>
+					</div>
+					<div class="col-xs-10 f22 col-sm-10">
+						<label>Add products </label>
+					</div>
+				</div>
+				<div class="form-group col-sm-10 col-sm-offset-1 col-xs-12 border_pack1">
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-12 f18">
+							<div class="col-sm-9 f18 nolrpad ">
+								<label>Product details </label>
+							</div>
+							
+							<div class="col-sm-3 f18" style="padding-left:50px">
+								<a onclick="myFunction()" id="createNew"><span class="fa fa-plus-circle f18"></span><strong class="f16 no_pad_lA ">Create new</strong></a>
+							</div>
+						
+						</div>
+						<div class="col-sm-4">
+							<label>Product name </label>
+							<input type="text"  ng-model="values.productName" name="productName" class="form-control" required/>
+							<span class="err_style f12" ng-show="createNewSellListingStepTwo.productName.$error.required && createNewSellListingStepTwo.productName.$dirty">Enter product name.</span>
+						</div>
+						<div class="col-sm-4">
+							<label>Product Notes </label>
+							<textarea style="height:40px" type="text"  ng-model="values.productNotes"  class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-4">
+							<label>Product type </label>
+							<select ng-model="values.productType" class="form-control"  required>
+								<option>Ammunition</option>
+								<option>Case</option>
+								<option>Projectile,</option>
+								<option>Gun Powder</option>
+								<option>Primer</option>
+							</select>
+						</div>
+						<div class="col-sm-4">
+							<label>Manufacture date </label>
+							<div class=" input-group">
+								<input type="date" id="manufactureDate" ng-model="values.manufactureDate" ng-change="enddatef()"class="form-control f12">
+								<span id="manufactureDateCalendar" class="input-group-addon " style="color:transparent">.<a class="fa fa-calendar" style="color:black"></a></span>   
+							</div> 
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-4">
+							<label>Product origin city </label>
+							<input type="text" id="productOriginCity" name="productOriginCity" ng-model="values.productOriginCity" class="form-control" required />
+							<span class="err_style f12" ng-show="createNewSellListingStepTwo.productOriginCity.$error.required && createNewSellListingStepTwo.productOriginCity.$dirty">Enter product name.</span>
+						</div>
+						<div class="col-sm-4">
+							<label>Product origin country </label>
+							<select class="form-control" ng-model="values.productorigincountry"  id="country"  required ></select>
+						
+						</div>
+						<div class="col-sm-4">
+							<label>Product origin state </label>
+							<select class="form-control" ng-model="values.productOriginState" id="state" required></select>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-12 f18">
+							<label>Packaging  details </label>
+						</div>
+						<div class="col-sm-4">
+							<label>Package units</label>
+							<select class="form-control" ng-model="values.packageUnits" required>
+								<option>opt1</option>
+								<option>opt2</option>
+								<option>opt3</option>
+								<option>opt4</option>
+							</select>
+						</div>
+						<div class="col-sm-4">
+							<label>Package  type</label>
+							<select class="form-control"  ng-model="values.packageType" required>
+								<option>Box</option>
+								<option>Industrial</option>
+							</select>
+						</div>
+						<div class="col-sm-4">
+							<label>Package container</label>
+							<select class="form-control"  ng-model="values.packageContainer" required>
+								<option>opt1</option>
+								<option>opt2</option>
+								<option>opt3</option>
+								<option>opt4</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-4">
+							<label>Product quantity </label>
+							<input type="text" class="form-control" id="productQuantity" name="productQuantity" numbers-only ng-model="values.productQuantity" required/>
+							<span class="err_style f12" ng-show="createNewSellListingStepTwo.productQuantity.$error.required && createNewSellListingStepTwo.productQuantity.$dirty">Enter product quantity.</span>
+						</div>
+						<div class="col-sm-4">
+							<label>Lot number </label>
+							<input type="text" class="form-control" id="lotNumber" name="lotNumber" ng-model="values.lotNumber" numbers-only  />
+							<!-- <span class="err_style f12" ng-show="createNewSellListingStepTwo.lotNumber.$error.required && createNewSellListingStepTwo.lotNumber.$dirty">Enter lot name.</span> -->
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-12 f18">
+							<label>Pricing details </label>
+						</div>
+						<div class="col-sm-4">
+							<label>Price per unit </label>
+							<input type="text" class="form-control" id="pricePerUnit" name="pricePerUnit" ng-model="values.pricePerUnit"  numbers-only required />
+							<span class="err_style f12" ng-show="createNewSellListingStepTwo.pricePerUnit.$error.required && createNewSellListingStepTwo.pricePerUnit.$dirty">Enter price per unit.</span>
+						</div>
+						<div class="col-sm-4">
+							<label>Total price </label>
+							<input type="text" class="form-control" id="totalPrice" name="totalPrice" ng-model="values.totalPrice" required />
+							<span class="err_style f12" ng-show="createNewSellListingStepTwo.totalPrice.$error.required && createNewSellListingStepTwo.totalPrice.$dirty">Enter total price.</span>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+							<button type="button" id="addProduct" style="width:100%" ng-click="addProduct()"  class="btn btn-info btn-sm center-block">Add Product</button>
+						</div>
+					</div>	
+				</div>
+				<div class="form-group col-sm-12 col-xs-12">
+					<div class="col-xs-2 f20 text-center col-sm-1 col-sm-offset-1">
+						<label>5</label>
+					</div>
+					<div class="col-xs-10 f22 col-sm-10">
+						<label>Review products</label>
+					</div>
+				</div>
+				<div id="productHolder" class="form-group col-sm-10 col-sm-offset-1 col-xs-12">
+					<!-- <div class="col-sm-12 alert alert-dismissible" style="background-color:#cccccc;margin-bottom:0px " >
+						<button type="button" id="reviewProductsRemove" class="close" data-dismiss="alert"><a class="fa fa-remove tohover f25" ></a></button>
+				   
+						<button type="button" id="reviewProductsEdit" class="close"> <a class="fa fa-pencil tohover f25" ></a></button>
+				   
+						<div class="col-sm-2">
+							Product name:
+						</div>
+						<div class="col-sm-6">
+							Brass Unit Price: 30ZERV/pound    Total price: 300ZERV
+						</div>
+					</div> -->
+				</div>	
+				
+				<div class="form-group col-xs-12 col-sm-6">
+					<div class="form-group col-xs-6 col-sm-4" >
+						<button type="reset" id="cancel" style="width:100%" class="btn btn-default btn-sm center-block">Cancel</button>
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<button type="button" ng-click="onSaveClose()" style="width:100%" id="saveAndClose" ng-click="saveAndClose" class="btn btn-info btn-sm center-block">Save and close</button>
+					</div>
+				</div>	
+				<div class="form-group col-xs-12 col-sm-6" >
+					<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+						<input type="button" style="width:100%" class="btn btn-default btn-sm center-block"  id="back" value="Back" ng-click="step_1()">
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<input type="button" style="width:100%" ng-click="save()" class="btn btn-info btn-sm center-block" ng-disabled="createNewSellListingStepTwo.$invalid" id="next" value="Next">
+					</div>
+				</div>	
+			</div>
+		</div>
+	</form> 
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ <!DOCTYPE html>
+<title>Onboarding</title>
+   <script type="text/javascript">
+  $(document).ready(function() {
+  $("#manufactureDate").datepicker();
+  $('#manufactureDateCalendar').click(function() {
+    $("#manufactureDate").focus();
+  });
+});
+  </script>
+<body> 
+<div class="container-fluid" style="padding-right:0px;padding-left:0px">
+			<div class="form-group col-sm-12 col-md-12 col-lg-12">
+				<div class="form-group col-sm-12 col-xs-12 text-center">
+				<label class="f25"><strong> New Sell Listing</strong></label>
+				</div>
+			</div>
+			<div class="form-group col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2">
+					<ol class="progress1 progress1--large">
+				  <li class="is-complete" data-step="1">
+					Listing details
+				  </li>
+				  <li class="is-active" data-step="2">
+					 Product(s) details
+				  </li>
+				  <li data-step="3">
+					Terms of sale
+				  </li>
+				   <li data-step="4">
+					Confirmation
+				  </li>  
+				</ol>
+				<div class="form-group col-sm-12 col-xs-12">
+					<div class="col-xs-2 f20 text-center col-sm-1 col-sm-offset-1">
+						<label>4 </label>
+					</div>
+					<div class="col-xs-10 f22 col-sm-10">
+						<label>Add products </label>
+					</div>
+				</div>
+				<div class="form-group col-sm-10 col-sm-offset-1 col-xs-12 border_pack1">
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-12 f18">
+						<label>Product details </label>
+						</div>
+						<div class="col-sm-4">
+						<label>Product name </label>
+						<input type="text" id="productName" ng-model="values.productName" class="form-control"/>
+						</div>
+						<div class="col-sm-4">
+						<label>Product Notes </label>
+						<input type="text" id="productNotes" ng-model="values.productNotes"  class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-4">
+						<label>Product type </label>
+						<select class="form-control" ng-model="values.productType">
+						<option>Brass</option>
+						<option>opt2</option>
+						<option>opt3</option>
+						<option>opt4</option>
+						</select>
+						</div>
+						<div class="col-sm-4">
+						<label>Manufacture date </label>
+						<div class=" input-group">
+							<input type="date" id="manufactureDate" ng-model="values.manufactureDate" ng-change="enddatef()"class="form-control f12">
+							  <span id="manufactureDateCalendar" class="input-group-addon " style="color:transparent">.<a class="fa fa-calendar" style="color:black"></a></span>   
+						</div> 
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-4">
+						<label>Product origin city </label>
+						<input type="text" id="productOriginCity" ng-model="values.productOriginCity" class="form-control"/>
+						</div>
+						<div class="col-sm-4">
+						<label>Product origin state </label>
+						<select class="form-control" ng-model="values.productOriginState">
+						<option>virgina</option>
+						<option>opt2</option>
+						<option>opt3</option>
+						<option>opt4</option>
+						</select>
+						</div>
+						<div class="col-sm-4">
+						<label>Product origin country </label>
+						<select class="form-control" ng-model="values.productOriginCountry">
+						<option>United States</option>
+						<option>opt2</option>
+						<option>opt3</option>
+						<option>opt4</option>
+						</select>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-12 f18">
+						<label>Packaging  details </label>
+						</div>
+						<div class="col-sm-4">
+						<label>Package units</label>
+						<select class="form-control" ng-model="values.packageUnits">
+						<option>opt1</option>
+						<option>opt2</option>
+						<option>opt3</option>
+						<option>opt4</option>
+						</select>
+						</div>
+						<div class="col-sm-4">
+						<label>Package  type</label>
+						<select class="form-control"  ng-model="values.packageType">
+						<option>opt1</option>
+						<option>opt2</option>
+						<option>opt3</option>
+						<option>opt4</option>
+						</select>
+						</div>
+						<div class="col-sm-4">
+						<label>Package container</label>
+						<select class="form-control"  ng-model="values.packageContainer">
+						<option>opt1</option>
+						<option>opt2</option>
+						<option>opt3</option>
+						<option>opt4</option>
+						</select>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-4">
+						<label>Product quantity </label>
+						<input type="text" class="form-control" id="productQuantity" ng-model="values.productQuantity"/>
+						</div>
+						<div class="col-sm-4">
+						<label>Lot number </label>
+						<input type="text" class="form-control" id="lotNumber" ng-model="values.lotNumber" />
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="col-sm-12 f18">
+						<label>Pricing details </label>
+						</div>
+						<div class="col-sm-4">
+						<label>Price per unit </label>
+						<input type="text" class="form-control" id="pricePerUnit" ng-model="values.pricePerUnit" />
+						</div>
+						<div class="col-sm-4">
+						<label>Total price </label>
+						<input type="number" class="form-control" id="totalPrice" ng-model="values.totalPrice"/>
+						</div>
+					</div>
+					<div class="form-group col-xs-12 f16 col-sm-12">
+						<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+							<button type="button" id="addProduct" style="width:100%"  class="btn btn-info btn-sm center-block" ng-click="onaddProduct()">Add Product</button>
+						</div>
+					</div>	
+				</div>
+				<div class="form-group col-sm-12 col-xs-12">
+					<div class="col-xs-2 f20 text-center col-sm-1 col-sm-offset-1">
+						<label>5</label>
+					</div>
+					<div class="col-xs-10 f22 col-sm-10">
+						<label>Review products</label>
+					</div>
+				</div>
+				<div class="form-group col-sm-10 col-sm-offset-1 col-xs-12">
+				  <div class="col-sm-12 alert alert-dismissible" style="background-color:#cccccc;margin-bottom:0px " >
+					<button type="button" id="reviewProductsRemove" class="close" data-dismiss="alert"><a class="fa fa-remove tohover f25" ></a></button>
+				   
+					<button type="button" id="reviewProductsEdit" class="close"> <a class="fa fa-pencil tohover f25" ></a></button>
+				   
+				   <div class="col-sm-2">
+					  Product name:
+				   </div>
+				   <div class="col-sm-6">
+					 Brass Unit Price: 30ZERV/pound    Total price: 300ZERV
+				   </div>
+					</div>
+					</div>	
+				
+				<div class="form-group col-xs-12 col-sm-6">
+					<div class="form-group col-xs-6 col-sm-4" >
+						<button type="button" id="cancel" style="width:100%" class="btn btn-default btn-sm center-block">Cancel</button>
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<a ng-click="onSaveClose()" input type="button" style="width:100%" class="btn btn-info btn-sm center-block" id="next" href="{{hostname}}#/salesOpportunities_Listings">Save and close</a> 
+					</div>
+				</div>	  
+				<div class="form-group col-xs-12 col-sm-6" >
+					<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+					<a input type="button" style="width:100%" class="btn btn-default btn-sm center-block"  id="back" href="{{hostname}}#/createNewSellListing_Step-1">Back</a>
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<a input type="button" style="width:100%" ng-click="onSaveNext()" class="btn btn-info btn-sm center-block" id="next" href="">Next</a>
+					</div>
+				</div>	
+</div>
+</div>
+</body> -->

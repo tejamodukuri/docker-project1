@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526553721304' stop='1526553757546'>
+    <name>to test the zerv application</name>
+    <title>to test the zerv application</title>
+    <test-cases>
+        <test-case start='1526553721305' status='passed' stop='1526553728816'>
+            <name>it should verify sales opp listing and navigate to create list_1</name>
+            <title>it should verify sales opp listing and navigate to create list_1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553728816' status='passed' stop='1526553736936'>
+            <name>it should verify sales opp listing and navigate to sellListingDetails</name>
+            <title>it should verify sales opp listing and navigate to sellListingDetails</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553736937' status='passed' stop='1526553744912'>
+            <name>it should verify sales opp listing and navigate to create list_1</name>
+            <title>it should verify sales opp listing and navigate to create list_1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553744912' status='passed' stop='1526553757546'>
+            <name>it should navigate to the create new listing-2</name>
+            <title>it should navigate to the create new listing-2</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

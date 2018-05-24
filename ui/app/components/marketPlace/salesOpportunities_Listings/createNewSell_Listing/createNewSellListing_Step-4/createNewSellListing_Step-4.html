@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<title>Onboarding</title>
+<body> 
+<form name="createNewSell_step_4">
+<div class="container-fluid" style="padding-right:0px;padding-left:0px">
+      <div class="col-sm-12 col-xs-12 col-sm-offset-1 f14">
+			<label><a> Selling Opportunities > new Listing</a></label>
+		</div>
+		
+	<div class="form-group col-sm-12 col-md-12 col-lg-12">
+		<div class="col-sm-12 col-xs-12 text-center f25">
+			<label><strong>New Sell Listing</strong></label>
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2">
+		<ol class="progress1 progress1--large">
+		  <li class="is-complete" data-step="1" ng-click="step_1()">
+			Listing details 
+		  </li>
+		  <li class="is-complete"   data-step="2" ng-click="step_2()">
+			Project(s) details 
+		  </li>
+		  <li class="is-complete"  data-step="3" ng-click="step_3()">
+			Terms of sale
+		  </li>
+		   <li class="is-complete"  data-step="4" ng-click="step_4()">
+			Confirmation
+		  </li> 
+		</ol>
+		<div class="form-group col-sm-12 col-sm-offset-0 col-xs-12">
+			<div class="form-group col-sm-12 col-sm-offset-0 col-xs-12">
+				<div class="col-sm-1  text-center">
+						<label class="f22">9</label>
+				</div>
+				<div class="form-group col-sm-11 col-xs-11 col-xs-offset-1 col-sm-offset-0 ">
+					<div class="col-sm-2">
+						<label class="f14">Confirmation</label>
+					</div>
+				</div>
+			</div>
+				
+			<div class="form-group col-sm-12 col-xs-12 col-sm-offset-0 border_pack5">
+			<div class="col-sm-12 col-xs-12  ">
+					<div class="form-group"><strong>Your sell listing summary</strong></div>
+				<div class="col-sm-12 form-group">
+						<div class="form-group "><div class="f16 fa fa-edit" ng-click="step_1()"></div><strong>Step-1:</strong></div>
+					<div class="col-sm-3"><b>Publish Date:</b>{{vall.publishDate}}</div>
+					<div class="col-sm-3"><b>Expiration Date:</b>{{vall.expirationDate}}</div>
+					<div class="col-sm-3"><b>One time request:</b>{{vall.oneTimeRequest}}</div>
+					<div class="col-sm-3"><b>Recurring Request:</b>{{vall.recurringRequest}}</div>
+					<div class="col-sm-3"><b>One time request:</b>{{vall.autoReListIfFulfillment}}</div>
+					<div class="col-sm-3"><b>Recurring request:</b>{{vall.saveAsTemplate}}</div>
+					<div class="col-sm-3"><b>Template name:</b>{{vall.templateName}}</div>
+					<div class="col-sm-3 mar_bottom_acceptBid_Sell"><b>Expiration date:</b>{{vall.requestName}}</div>
+					<div class="form-group"><div class="f16 fa fa-edit" ng-click="step_2()"></div><strong>Step-2:</strong></div>
+					<div class="col-sm-3"><b>Product name:</b>{{val2.productName}}</div>
+					<div class="col-sm-3"><b>Product notes:</b>{{val2.productNotes}}</div>
+					<div class="col-sm-3"><b>Product type:</b>{{val2.productType}}</div>
+					<div class="col-sm-3"><b>Manufacture date:</b>{{val2.manufactureDate}}</div>
+					<div class="col-sm-3"><b>Product origin city:</b>{{val2.productOriginCity}}</div>
+					<div class="col-sm-3"><b>Product origin state:</b>{{val2.productOriginState}}</div>
+					<div class="col-sm-3"><b>Product quantity:</b>{{val2.productQuantity}}</div>
+					<div class="col-sm-3"><b>Product type:</b>{{val2.productType}}</div>
+					<div class="col-sm-3 mar_bottom_acceptBid_Sell">Total Price:{{val2.totalPrice}}</div>
+					<div class=" col-sm-12 no-padding form-group"><div class="f16 fa fa-edit" ng-click="step_3()"></div><strong>Step-3:</strong></div>
+					<div class="col-sm-3"><b>Payment time frame:</b>{{val.paymentTimeFrame}}</div>
+					<div class="col-sm-3"><b>Payment method:</b>{{val.paymentMethod}}</div>
+					<div class="col-sm-3"><b>Delivery terms:</b>{{val.deliveryTerms}}</div>
+					<div class="col-sm-3"><b>Bidder terms:</b>{{val.Marketplace}}</div>
+					<div class="col-sm-3 mar_bottom_acceptBid_Sell"><b>Addtional notes:</b>{{val.addtionalNotes}}</div>
+					<div class="col-sm-12 col-xs-12 bottom-padding-io" >
+									
+				</div>
+			   
+			 </div>
+			 <div class="col-sm-1 col-sm-offset-1 fa fa-info-circle text-center no-padding mar_bot_pro f22 off_butn_mar_pad " ></div>
+			 <input	class="ComponentsSelect text-center checkboxsize" id="termsAndConditions" ng-model="values.termsAndConditions" type="checkbox"  required/>
+				<label>I accept the terms and conditions associated with creating marketplace listing. specified here </label>
+				</div>	
+			</div>
+		</div>
+		   <div class="form-group col-xs-12 col-sm-6 pad_top"style="
+		   margin-top: 50px;">
+				<div class="form-group col-xs-6 col-sm-4" >
+					<button type="button" style="width:100%"  id="cancel" class="btn btn-default btn-md center-block">Cancel</button>
+				</div>
+				<div class="form-group col-xs-6 col-sm-4">
+					<button type="button" style="width:100%" id="saveAndClose"  class="btn btn-info btn-md center-block">Save and close</button>
+				</div>
+		   </div>	
+			<div class="form-group col-xs-12 col-sm-6 pad_top" style="
+			margin-top: 50px;" >
+				<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+				<a style="width:100%" class="btn btn-default btn-md center-block" id="back" ng-click="step_3()" >Back</a>
+				</div>
+				<div class="form-group col-xs-6 col-sm-4">
+					<a style="width:100%" class="btn btn-info btn-md center-block" ng-disabled="createNewSell_step_4.$invalid" id="publicListing" data-toggle="modal" data-target="#myModal" >Public Listing</a>
+					
+			</div>
+			</div>		
+	</div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				</div>
+				<div class="modal-body">
+						<h3 class="justify_txt f12 allmarg"><b>Entered details have been accepted and RFx process has been initiated. Any matches will be available to user on their dashboard.</b></h3>
+						<br/>
+						<div class="fa fa-check col-sm-12 text-center " style="font-size:30px;color:rgb(25, 211, 25);text-align:text-center"></div>
+						<br/>
+						<!-- <h4  ng-show="false" class="text-center "><strong>Your Alert name: {{values.alertName}}</strong></h4> -->
+						<br/>	<br/>
+				</div>
+				<div class="modal-footer">
+					<div class=" form-group col-xs-12 col-sm-12">
+						<!-- <div class="col-sm-4 col-xs-6">
+							<a style="text-decoration:none;" data-dismiss="modal" id="term_cancel" class="btn btn-default btn-md center-block" >DECLINE</a>
+						</div> -->
+						<div class="col-sm-4 col-xs-6 col-sm-offset-4">
+							<button style="width:100%"  id="agreeTerms" class="btn btn-info btn-md center-block"
+							 data-dismiss="modal" ng-click="list_dash();step_profile()"  >Close</button>
+							<!-- <a style = "text-decoration:none;"  class="btn btn-info btn-md center-block" href="{{hostname}}#/accountPage" data-dismiss="modal">AGREE</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</form>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<title>Onboarding</title>
+<body> 
+<form name="createNewSellListing_Step_4">
+<div class="container-fluid" style="padding-right:0px;padding-left:0px">
+      <div class="col-sm-12 col-xs-12 col-sm-offset-1 f14">
+			<label><a> Selling Opportunities > new Listing</a></label>
+		</div>
+		
+	<div class="form-group col-sm-12 col-md-12 col-lg-12">
+		<div class="col-sm-12 col-xs-12 text-center f25">
+			<label><strong>New Sell Listing</strong></label>
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2">
+		<ol class="progress1 progress1--large">
+		  <li class="is-complete" data-step="1">
+			Listing details 
+		  </li>
+		  <li class="is-complete"   data-step="2">
+			Project(s) details 
+		  </li>
+		  <li class="is-complete"  data-step="3">
+			Terms of sale
+		  </li>
+		   <li class="is-complete"  data-step="4">
+			Confirmation
+		  </li> 
+		</ol>
+		<div class="form-group col-sm-12 col-sm-offset-0 col-xs-12">
+			<div class="form-group col-sm-12 col-sm-offset-0 col-xs-12">
+				<div class="col-sm-1  text-center">
+						<label class="f22">9</label>
+				</div>
+				<div class="form-group col-sm-11 col-xs-11 col-xs-offset-1 col-sm-offset-0 ">
+					<div class="col-sm-2">
+						<label class="f14">Confirmation</label>
+					</div>
+				</div>
+			</div>
+		
+			<div class="form-group col-sm-12 col-xs-12 col-sm-offset-0 ">
+		
+
+					<div class="col-sm-12 col-xs-12  ">
+							<div class="form-group"><strong>Your sell listing summary</strong></div>
+						<div class="col-sm-12 form-group">
+								<div class="form-group "><div class="f16 fa fa-edit" ng-click="step_1()"></div><strong>Step-1:</strong></div>
+							<div class="col-sm-3"><b>Publish Date:</b>{{vall.publishDate}}</div>
+							<div class="col-sm-3"><b>Expiration Date:</b>{{vall.expirationDate}}</div>
+							<div class="col-sm-3"><b>One time request:</b>{{ vall.oneTimeRequest ? 'Yes' : 'No' }}</div>
+							<div class="col-sm-3"><b>Recurring Request:</b>{{vall.recurringRequest}}</div>
+							<div class="col-sm-3"><b>One time request:</b>{{vall.autoReListIfFulfillment}}</div>
+							<div class="col-sm-3"><b>Recurring request:</b>{{vall.saveAsTemplate ? 'Yes' : 'No'}}</div>
+							<div class="col-sm-3"><b>Template name:</b>{{vall.templateName}}</div>
+							<div class="col-sm-3 mar_bottom_acceptBid_Sell">Expiration date:{{vall.requestName}}</div>
+							<div class="form-group"><div class="f16 fa fa-edit" ng-click="step_2()"></div><strong>Step-2:</strong></div>
+							<div class="col-sm-3"><b>Product name:</b>{{val2.productName}}</div>
+							<div class="col-sm-3"><b>Product notes:</b>{{val2.productNotes}}</div>
+							<div class="col-sm-3"><b>Product type:</b>{{val2.productType}}</div>
+							<div class="col-sm-3"><b>Manufacture date:</b>{{val2.manufactureDate}}</div>
+							<div class="col-sm-3"><b>Product origin city:</b>{{val2.productOriginCity}}</div>
+							<div class="col-sm-3"><b>Product origin state:</b>{{val2.productOriginState}}</div>
+							<div class="col-sm-3"><b>Product quantity:</b>{{val2.productQuantity}}</div>
+							<div class="col-sm-3"><b>Product type:</b>{{val2.productType}}</div>
+							<div class="col-sm-3 mar_bottom_acceptBid_Sell"><b>Total Price:</b>{{val2.totalPrice}}</div>
+							<div class=" col-sm-12 no-padding form-group"><div class="f16 fa fa-edit" ng-click="step_3()"></div><strong>Step-3:</strong></div>
+							<div class="col-sm-3"><b>Payment time frame:</b>{{val.paymentTimeFrame}}</div>
+							<div class="col-sm-3"><b>Payment method:</b>{{val.paymentMethod}}</div>
+							<div class="col-sm-3"><b>Delivery terms:</b>{{val.deliveryTerms}}</div>
+							<div class="col-sm-3"><b>Manufacture date:</b>{{val.manufactureDate}}</div>
+							<div class="col-sm-3"><b>Product origin city:</b>{{val.Marketplace}}</div>
+							<div class="col-sm-3 mar_bottom_acceptBid_Sell">Addtional notes:</b>{{val.addtionalNotes}}</div>
+							<div class="col-sm-12 col-xs-12 bottom-padding-io" >
+											
+						</div>
+						
+
+
+
+
+			   <div class="col-sm-12 col-xs-12" >
+						<p>ACCEPTANCE OF TERMS OF USE FOR THIS ZERV	</p>
+				 <div class="col-sm-1  fa fa-info-circle text-center f20" ></div>
+				 
+				 <input	class="ComponentsSelect checkboxsize" id="termsAndConditions" ng-model="values.termsAndConditions" type="checkbox" required/>
+					<label>I accept the terms and conditions associated with creating marketplace listing. specified here </label>
+			    </div>
+			 </div>
+			</div>
+		</div>
+		   <div class="form-group col-xs-12 col-sm-6 pad_top">
+				<div class="form-group col-xs-6 col-sm-4" >
+					<button type="button" style="width:100%"  id="cancel" class="btn btn-default btn-md center-block">Cancel</button>
+				</div>
+				<div class="form-group col-xs-6 col-sm-4">
+					<button type="button" style="width:100%" id="saveAndClose" ng-disabled="createNewSellListing_Step_4.$invalid" class="btn btn-info btn-md center-block">Save and close</button>
+				</div>
+		   </div>	
+			<div class="form-group col-xs-12 col-sm-6 pad_top" >
+				<div class="form-group col-xs-6 col-sm-4 col-sm-offset-4">
+				<a style="width:100%" class="btn btn-default btn-md center-block" id="back" href="{{hostname}}#/createNewSellListing_Step-3">Back</a>
+				</div>
+				<div class="form-group col-xs-6 col-sm-4">
+					<a style="width:100%" class="btn btn-info btn-md center-block" ng-disabled="createNewSellListing_Step_4.$invalid"  data-toggle="modal" data-target="#myModal"   id="publicListing" >Public Listing</a>
+				</div>
+			</div>		
+	</div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			Modal content-->
+			<!-- <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+				<!-- </div>
+				<div class="modal-body">
+						<h3 class="justify_txt f13 allmarg"><b>Entered details have been accepted and RFx process has been initiated. Any matches will be available to user on their dashboard.</b></h3>
+						<br/>
+						<div class="fa fa-check col-sm-12 text-center " style="font-size:30px;color:rgb(25, 211, 25);text-align:text-center"></div>
+						<br/>
+						<h4  ng-show="false" class="text-center "><strong>Your Alert name: {{values.alertName}}</strong></h4>
+						<br/>	<br/> -->
+				<!-- </div> -->
+				<!-- <div class="modal-footer">
+					<div class=" form-group col-xs-12 col-sm-12">
+						<! <! <div class="col-sm-4 col-xs-6"> -->
+							<!-- <a style="text-decoration:none;" data-dismiss="modal" id="term_cancel" class="btn btn-default btn-md center-block" >DECLINE</a>
+						</div>  -->
+						<!-- <div class="col-sm-4 col-xs-6 col-sm-offset-4">
+							<button style="width:100%"  id="agreeTerms" class="btn btn-info btn-md center-block"
+							 data-dismiss="modal" ng-click="publish()" >Close</button>
+							<!-- <a style = "text-decoration:none;"  class="btn btn-info btn-md center-block" href="{{hostname}}#/accountPage" data-dismiss="modal">AGREE</a> -->
+						<!-- </div>
+					</div> 
+				</div>
+			</div>
+
+		</div>
+	</div> 
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>

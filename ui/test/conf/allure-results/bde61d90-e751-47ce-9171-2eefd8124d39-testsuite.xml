@@ -1,0 +1,123 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1526553622427' stop='1526553721234'>
+    <name>to test the zerv application</name>
+    <title>to test the zerv application</title>
+    <test-cases>
+        <test-case start='1526553622428' status='passed' stop='1526553643414'>
+            <name>this is intake form Form insertaion</name>
+            <title>this is intake form Form insertaion</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553643414' status='passed' stop='1526553654149'>
+            <name>it should be able to create account</name>
+            <title>it should be able to create account</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553654149' status='passed' stop='1526553662328'>
+            <name>it should be able to login</name>
+            <title>it should be able to login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553662328' status='passed' stop='1526553672015'>
+            <name>it should be able to Do MFA for Email</name>
+            <title>it should be able to Do MFA for Email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553672015' status='passed' stop='1526553683071'>
+            <name>it should be able to Do MFA for Text</name>
+            <title>it should be able to Do MFA for Text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553683071' status='passed' stop='1526553694232'>
+            <name>it should be able to Do MFA for Call</name>
+            <title>it should be able to Do MFA for Call</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553694233' status='failed' stop='1526553699934'>
+            <name>should perform onboarding automation</name>
+            <title>should perform onboarding automation</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: Cannot find module '../page/companyinfo.js'</message>
+                <stack-trace>Error: Cannot find module '../page/companyinfo.js'
+                    at Function.Module._resolveFilename (module.js:547:15)
+                    at Function.Module._load (module.js:474:25)
+                    at Module.require (module.js:596:17)
+                    at require (internal/module.js:11:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/page/external_systems.js:1:63)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)
+                    at Function.Module._load (module.js:497:3)
+                From: Task: Run it("should perform onboarding automation") in control flow
+                    at UserContext.&lt;anonymous> (/usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /usr/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at shutdownTask_.MicroTask (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:115:2)
+                    at addSpecsToSuite (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/raj/newtest/CR-WS3/zervplatform/test/test/zerv_platform_test_conf.js:5:3)
+                    at Module._compile (module.js:652:30)
+                    at Object.Module._extensions..js (module.js:663:10)
+                    at Module.load (module.js:565:32)
+                    at tryModuleLoad (module.js:505:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1526553699934' status='passed' stop='1526553707329'>
+            <name>it Should View Trading Partners </name>
+            <title>it Should View Trading Partners </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553707329' status='passed' stop='1526553714049'>
+            <name>it Should View Other Persons Profile </name>
+            <title>it Should View Other Persons Profile </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1526553714049' status='passed' stop='1526553721232'>
+            <name>it Should View Groups/Favorites </name>
+            <title>it Should View Groups/Favorites </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

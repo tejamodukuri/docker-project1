@@ -1,0 +1,140 @@
+{
+  "BaseHost" : "http://34.213.38.204:4020/#/temp",
+  "InvitationLink1": "/#/InvitationLink",
+  "accountInformation1": "/#/accountInformation",
+  "createdConfirmation1": "/#/createdConfirmation",
+  "login1": "/#/login",
+  "profile1": "/#/profile",
+  "mfaRequest1": "/#/mfaRequest",
+  "mfaChooseMethod1": "/#/mfaChooseMethod",
+  "mfaEnterCodeEmail11": "/#/mfaEnterCodeEmail",
+  "mfaEnterCodePhoneCall1": "/#/mfaEnterCodePhoneCall",
+  "mfaEnterCodePhoneText1": "/#/mfaEnterCodePhoneText",
+  "externalSystemsSelected1": "/#/externalSystemsSelected",
+  "externalSystems1": "/#/externalSystems",
+  "intakeForm1": "/#/intakeForm",
+  "profileDetails1": "/#/profileDetails",
+  "companyInfo1": "/#/companyInfo",
+  "addInterests1": "/#/addInterests",
+  "tokenAccess1": "/#/tokenAccess",
+  "confirmation1": "/#/confirmation",
+  "vendors1": "/#/vendors",
+  "sellListingDetails" : "/#/sellListingDetails",
+  "X_personProfile1": "/#/X_personProfile",
+  "groupsFavorites1": "/#/groupsFavorites",
+   "sales_opp_listing":"/#/salesOpportunities_Listings",
+  "create_listing_one":"/#/createNewSellListing_Step-1",
+  "create_new_listing_two":"/#/createNewSellListing_Step-2",
+  "createListing":"/#/createNewSellListing_Step-3",
+  "create_new_listing_4": "/#/createNewSellListing_Step-4",
+  "createNewSell_Interest": "/#/createNewSell_Interest",
+  
+  "Login_page": {
+    "userName": "TestName",
+    "password": "!@#123QWE"
+  },
+  "Account_info": {
+     "userName": "TestName",
+	 "confir_username": "TestName",
+    "password": "!@#123QWE",
+	"confirm_password":"!@#123QWE"
+  },
+  "mfaEnterCodeEmail": {
+    "temporaryIdentificationCode": "10234",
+    "password": "Pinto@81234"
+  },
+  "mfaEnterCodePhoneText": {
+    "temporaryIdentificationCode": "10234",
+    "password": "Pinto@81234"
+  },
+  "mfaEnterCodePhoneCall": {
+    "temporaryIdentificationCode": "10234",
+    "password": "Pinto@81234"
+  },
+  "ExternalSystems1" :{
+	"regid":"0636039550000"
+  },
+  "intakeForm": {
+    "legalBusinessName": "LegalBusinessName ",
+    "description": "Some content over here",
+    "country": "India",
+    "address": "523 johnson street CL",
+    "zip": "560077",
+    "state": "CL",
+    "city": "Bregade",
+    "email": "johnpaul.pp33@gmail.com",
+    "phoneCode": "+1",
+    "phoneNumber": "8123412685",
+	"firstName":"Paul",
+	"lastName":"johndeo"
+  },
+  "companyInfo": {
+    "legalBusinessName": "LegalBusinessName ",
+    "doingBusinessAs": "Manager",
+    "corporateStructureDescription" : "Lorem Ipsum is simply dummy t It was pg Lorem ",
+    "mailingAddress": "abcd@gmail.com",
+    "state": "Washington DC",
+    "zip": "560077",
+    "country": "USA",
+    "expirationDate": "31-12-1996",
+     "pscCode": "560420",
+    "duns": "5645654545",
+    "cage": "11111"
+  },
+  "profileDetails": {
+    "companyDescription": "LegalBusinessName ",
+    "businessClassification": "Manager",
+    "logo": "abcdefg",
+    "facebook": "abcd@gmail.com",
+    "instagram": "Washington DC",
+    "twitter": "jcfdddfcdf",
+    "accountType": "Government",
+    "EIN": "125463250",
+    "FFLLicenseNumber": "123456789c55555",
+    "ATFLicenseNumber": "789456123221",
+    "ITARLicenseNumber": "54264984",
+    "BusinessTaxLicenseNumber": "248498484"
+  },
+  "sale_opp_listing":{
+  "sort":"Name"
+  },
+  "addIntrests": {
+    "alertName": "alertName "
+  },
+  "tokenAccess": {
+       "eitherPublicAddress": "0xasdfghjklpoiuytrewqasdfghjklmnbvcxzasdfg",
+    "zervPublicAddress": "0xasdfghjklpoiuytrewqasdfghjklmnbvcxzasdfg"
+  
+},
+"create_new_listing_3":{
+"paymentTimeFrame":"Time of control",
+"paymentMethod":"option1",
+"deliveryTerms":"7days",
+"deliveryTermsTextField":"30days",
+"markertPlaceSearch":"gold gun",
+"addtionalNotes":"had a good companion with you"	
+},
+
+"create_new_listing_2":{
+"productName":"Brass",
+"productNotes":"produt with good quality ",
+"productType":"Brass",
+"productOriginCity":"New Mond",
+"country":"China",
+"state":"Gansu",
+"packageUnits":"opt2",
+"packageType":"opt3",
+"packageContainer":"opt4",
+"productQuantity":"1200",
+"lotNumber":"12412",
+"pricePerUnit":"12",
+"totalPrice":"1200"
+},
+
+"create_selling1":{
+"templateName":"Option1",
+"requestName":"Demo"
+}
+
+
+}
